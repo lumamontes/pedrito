@@ -1,11 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- SEO Meta Tags -->
+		<title>Pedro Viana - Desenvolvedor Full Stack | DevOps SRE | Amapá</title>
+		<meta name="description" content="Pedro Viana é um desenvolvedor de software e DevOps SRE do Amapá. Indie hacker, escritor e entusiasta de tecnologia. Fundador da Thetaharpia. Especialista em Python, PHP, Go, AWS e infraestrutura." />
+		<meta name="keywords" content="Pedro Viana, desenvolvedor, software, DevOps, SRE, Amapá, Python, PHP, Go, AWS, Thetaharpia, programação, tecnologia, indie hacker" />
+		<meta name="author" content="Pedro Viana" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://pedroviana.netlify.app/" />
+		<meta property="og:title" content="Pedro Viana - Desenvolvedor Full Stack | DevOps SRE" />
+		<meta property="og:description" content="Desenvolvedor de software e DevOps SRE do Amapá. Indie hacker, escritor e entusiasta de tecnologia. Fundador da Thetaharpia." />
+		<meta property="og:image" content="https://pedroviana.netlify.app/pedro.png" />
+		<meta property="og:site_name" content="Pedro Viana Portfolio" />
+		<meta property="og:locale" content="pt_BR" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://pedroviana.netlify.app/" />
+		<meta property="twitter:title" content="Pedro Viana - Desenvolvedor Full Stack | DevOps SRE" />
+		<meta property="twitter:description" content="Desenvolvedor de software e DevOps SRE do Amapá. Indie hacker, escritor e entusiasta de tecnologia." />
+		<meta property="twitter:image" content="https://pedroviana.netlify.app/pedro.png" />
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://pedroviana.netlify.app/" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+		
+		<!-- Generator -->
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Pedro Viana",
+			"jobTitle": ["Desenvolvedor de Software", "DevOps SRE"],
+			"description": "Desenvolvedor de software e DevOps SRE do Amapá. Indie hacker, escritor e entusiasta de tecnologia.",
+			"url": "https://pedroviana.netlify.app",
+			"image": "https://pedroviana.netlify.app/pedro.png",
+			"sameAs": [
+				"https://github.com/pedrovian4",
+				"https://www.linkedin.com/in/pedro-viana",
+				"https://dev.to/pedrovian4"
+			],
+			"address": {
+				"@type": "PostalAddress",
+				"addressRegion": "Amapá",
+				"addressCountry": "BR"
+			},
+			"knowsAbout": ["Python", "PHP", "Go", "JavaScript", "AWS", "DevOps", "SRE"],
+			"affiliation": {
+				"@type": "Organization",
+				"name": "Thetaharpia",
+				"url": "https://thetaharpia.com"
+			},
+			"alumniOf": {
+				"@type": "EducationalOrganization",
+				"name": "Universidade Federal do Amapá",
+				"url": "https://www.unifap.br/"
+			}
+		}
+		</script>
 	</head>
 	<body>
 		<slot />
@@ -16,7 +85,10 @@
 	html,
 	body {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+			width: 100%;
+			height: 100%;
+			font-family: "Azeret Mono", monospace;
+		font-optical-sizing: auto;
+		font-style: normal;
 	}
 </style>
